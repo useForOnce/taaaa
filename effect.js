@@ -36,6 +36,7 @@ $("document").ready(function () {
 
   $("#play").click(function () {
     var audio = $(".song")[0];
+    audio.load()
     audio.play();
     $("#bulb_yellow").addClass("bulb-glow-yellow-after");
     $("#bulb_red").addClass("bulb-glow-red-after");
